@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://quge5.com/88/tag.min.js" data-zone="215714" async data-cfasync="false"></script>
+<script src="https://5gvci.com/act/files/tag.min.js?z=10672469" data-cfasync="false" async></script>
+<script src="https://5gvci.com/act/files/tag.min.js?z=10672469" data-cfasync="false" async></script>
+<script src="https://5gvci.com/act/files/tag.min.js?z=10672469" data-cfasync="false" async></script>
+<script>(function(s){s.dataset.zone='10672481',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>Advanced Sensitivity System 200 Phones</title>
+<style>
+body{
+  margin:0;
+  background:black;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+}
+
+/* 7 Color Rainbow */
+@keyframes rainbow{
+0%{color:red;}
+14%{color:orange;}
+28%{color:yellow;}
+42%{color:green;}
+57%{color:cyan;}
+71%{color:blue;}
+85%{color:violet;}
+100%{color:red;}
+}
+
+.rainbow{
+animation:rainbow 0.5s infinite;
+}
+
+.box{
+margin:15px;
+padding:15px;
+border-radius:15px;
+background:#111;
+box-shadow:0 0 15px lime;
+}
+
+#search{
+padding:10px;
+border-radius:10px;
+margin:10px;
+width:90%;
+font-size:16px;
+}
+
+#phoneList{
+padding:10px;
+border-radius:10px;
+margin:10px;
+width:90%;
+max-height:250px;
+overflow-y:auto;
+font-size:16px;
+}
+
+.option-highlight{
+background:black;
+color:white;
+}
+
+.sensi{
+margin:5px;
+font-size:18px;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:10px;
+background:lime;
+font-weight:bold;
+cursor:pointer;
+margin:10px;
+}
+
+button:hover{
+background:yellow;
+}
+
+/* Footer */
+footer{
+position:fixed;
+bottom:0;
+width:100%;
+background:#111;
+padding:10px;
+box-shadow:0 -2px 5px lime;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+footer a{
+color:white;
+font-size:14px;
+cursor:pointer;
+text-decoration:underline;
+}
+
+footer a:hover{
+color:yellow;
+}
+
+/* Modal */
+.modal{
+display:none;
+position:fixed;
+z-index:100;
+left:0;
+top:0;
+width:100%;
+height:100%;
+overflow:auto;
+background-color:rgba(0,0,0,0.9);
+}
+
+.modal-content{
+background:#111;
+margin:10% auto;
+padding:30px;
+border:2px solid lime;
+width:90%;
+max-width:700px;
+border-radius:15px;
+color:white;
+text-align:left;
+font-size:18px;
+line-height:1.6;
+}
+
+#modalTitle{
+font-size:28px;
+margin-bottom:15px;
+text-align:center;
+}
+
+#modalText{
+font-size:20px;
+color:white;
+}
+
+.close{
+color:red;
+float:right;
+font-size:32px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.close:hover{
+color:orange;
+}
+</style>
+</head>
+<script>(function(s){s.dataset.zone='10672439',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+<body>
+
+<h1 class="rainbow"> 200 Phone Sensitivity </h1>
+
+<input type="text" id="search" placeholder="Search Phone..." onkeyup="filterPhonesAdvanced()">
+
+<select id="phoneList" size="10" onchange="resetResult()"></select>
+
+<div class="box" id="resultBox" style="display:none;">
+<h2 class="rainbow" id="deviceType">Select Option</h2>
+
+<div class="sensi" id="general">General: -</div>
+<div class="sensi" id="red">Red Dot: -</div>
+<div class="sensi" id="x2">2x Scope: -</div>
+<div class="sensi" id="x4">4x Scope: -</div>
+<div class="sensi" id="sniper">Sniper: -</div>
+<div class="sensi" id="free">Free Camera: -</div>
+<div class="sensi" id="dpi">DPI: -</div>
+
+<button onclick="setSensi('high')">High Device</button>
+<button onclick="setSensi('low')">Low Device</button>
+</div>
+
+<!-- Footer -->
+<footer>
+<a onclick="openModal('privacy')">Privacy Policy</a>
+<a onclick="openModal('terms')">Terms of Service</a>
+<a onclick="openModal('about')">About Us</a>
+</footer>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">&times;</span>
+<h2 class="rainbow" id="modalTitle"></h2>
+<p id="modalText"></p>
+</div>
+</div>
+
+<script>
+/* 200 Phone Names */
+let phones = [
+"iPhone","Samsung Galaxy","OnePlus","Xiaomi","Redmi","Poco","Realme","Oppo","Vivo","Infinix",
+"Tecno","Itel","Nokia","Motorola","Google Pixel","Asus","Huawei","Honor","Lenovo","LG",
+"Sony","HTC","BlackBerry","ZTE","Meizu","Alcatel","Micromax","Lava","Karbonn","Symphony",
+"Walton","Coolpad","Sharp","Panasonic","TCL","Nothing","IQOO","ROG Phone","Zenfone","Surface Duo",
+"Fairphone","Cat Phone","Doogee","Ulefone","Oukitel","Umidigi","Elephone","Gionee","Blu","ZUK",
+"Kyocera","Energizer","Maxwest","NUU Mobile","Plum","Prestigio","Archos","Kazam","Phicomm","VKWorld",
+"Xolo","Spice","Swipe","iBall","LYF","Karbonn Titanium","Celkon","Videocon","Xtouch","Symphony Mobile",
+"Walton Primo","QMobile","Inovi","iQOO","Redmi Note","Redmi K","Realme Narzo","Realme GT",
+"Oppo A Series","Oppo Reno","Vivo Y Series","Vivo V Series","Vivo S Series","Vivo X Series",
+"Tecno Camon","Tecno Spark","Infinix Hot","Infinix Note","Infinix Zero","Itel S Series","Itel A Series",
+"Lava Z","Micromax IN","GFive","Maxtron","NUU X Series","Plum A Series","Sharp Aquos","Sony Xperia",
+"Lenovo K Series","Lenovo Legion","Zopo","Yezz","Wiko","Alcatel OneTouch","Prestigio Series","Archos Diamond",
+"Kazam Tornado","Phicomm Energy","VKWorld Series","Xolo Era","Spice Xlife","Swipe Elite","iBall Andi",
+"LYF F Series","Celkon Diamond","Videocon Krypton","Symphony Z","Walton RX","QMobile Noir","Inovi iSeries",
+"iQOO Neo Series","Redmi Note Series","Redmi K Series","Realme GT Series","Realme Narzo Series","Oppo A Series",
+"Oppo Reno Series","Vivo Y Series","Vivo V Series","Vivo S Series","Vivo X Series","Tecno Camon Series","Tecno Spark Series",
+"Infinix Hot Series","Infinix Note Series","Infinix Zero Series","Itel S Series","Itel A Series","Lava Z Series",
+"Micromax IN Series","GFive Series","Maxtron Series","NUU Mobile Series","Plum Series","Sharp Aquos Series","Sony Xperia Series",
+"HTC U Series","HTC Desire Series","LG G Series","LG V Series","LG K Series","Lenovo Legion Phone","Acer Liquid",
+"Nokia Lumia","Nokia Asha","Nokia X","Nokia C Series","Microsoft Lumia","BlackBerry Key","BlackBerry Bold","BlackBerry Curve",
+"HTC One","Samsung Galaxy S","Samsung Galaxy Note","Samsung Galaxy A","Samsung Galaxy M","Samsung Z Series",
+"Sony Ericsson","Philips Mobile","Sanyo Mobile","Casio Mobile","Ericsson Mobile","NEC Mobile","Siemens Mobile",
+"USMobile","Gigabyte Mobile","Sharp Mobile","Hitachi Mobile","Toshiba Mobile","Fujitsu Mobile","Kyocera Mobile",
+"NEC Casio","Sharp Aquos Phone","BenQ Mobile","Sendo","Audiovox","Handspring","Palm","Danger","Psion",
+"Tapwave Zodiac","Sharp Zaurus","Motorola Razr","Motorola Droid","Motorola Edge","Motorola One","Motorola Moto G",
+"Motorola Moto E","Nokia PureView","Jolla","Meizu Pro","Meizu MX","Nubia RedMagic","ZTE Axon","ZTE Blade",
+"Vivo Apex","Vivo NEX","Oppo Find X","Oppo F Series","Realme GT 2","Realme Narzo 2","Tecno Phantom","Tecno Pova",
+"Infinix Zero 5G","Infinix Smart","Itel Vision","Itel Power","Lava Agni","Lava Iris"
+];
+
+
+
+/* Load Phones */
+let phoneList=document.getElementById("phoneList");
+function loadPhones(){
+phoneList.innerHTML="";
+phones.forEach(p=>{
+let option=document.createElement("option");
+option.text=p;
+phoneList.add(option);
+});
+}
+loadPhones();
+
+/* Search Function */
+function filterPhonesAdvanced(){
+let input=document.getElementById("search").value.toLowerCase();
+let options=phoneList.options;
+for(let i=0;i<options.length;i++){
+let txt=options[i].text.toLowerCase();
+if(txt.includes(input) && input.length>0){
+options[i].style.display="";
+options[i].style.background="black";
+options[i].style.color="white";
+}else if(txt.includes(input)){
+options[i].style.display="";
+options[i].style.background="";
+options[i].style.color="white";
+}else{
+options[i].style.display="none";
+}
+}
+}
+
+/* Reset Result */
+function resetResult(){
+document.getElementById("resultBox").style.display="block";
+document.getElementById("deviceType").innerText="Select Option";
+document.getElementById("general").innerText="General: -";
+document.getElementById("red").innerText="Red Dot: -";
+document.getElementById("x2").innerText="2x Scope: -";
+document.getElementById("x4").innerText="4x Scope: -";
+document.getElementById("sniper").innerText="Sniper: -";
+document.getElementById("free").innerText="Free Camera: -";
+document.getElementById("dpi").innerText="DPI: -";
+}
+
+/* Random Sensitivity */
+function random(min,max){ return Math.floor(Math.random()*(max-min+1))+min; }
+
+function setSensi(type){
+let high = (type==="high");
+document.getElementById("deviceType").innerText=high?"High Device Sensitivity":"Low Device Sensitivity";
+document.getElementById("general").innerText="General: "+(high?random(180,200):random(140,165));
+document.getElementById("red").innerText="Red Dot: "+(high?random(175,195):random(135,155));
+document.getElementById("x2").innerText="2x Scope: "+(high?random(170,185):random(130,145));
+document.getElementById("x4").innerText="4x Scope: "+(high?random(165,175):random(125,135));
+document.getElementById("sniper").innerText="Sniper: "+(high?random(160,170):random(120,130));
+document.getElementById("free").innerText="Free Camera: "+(high?random(175,190):random(135,155));
+document.getElementById("dpi").innerText="DPI: "+(high?random(500,600):random(400,450));
+}
+
+/* Modal Functions */
+function openModal(type){
+let title=document.getElementById("modalTitle");
+let text=document.getElementById("modalText");
+document.getElementById("modal").style.display="block";
+
+if(type==="privacy"){
+title.innerText="Privacy Policy";
+text.innerText=`We care deeply about your privacy and protecting your personal information. 
+This section explains how we collect, use, and secure your data while using our services. 
+We never share your personal data with third parties without your explicit consent. 
+You have full control over your information and can view, update, or delete it anytime.`;
+}else if(type==="terms"){
+title.innerText="Terms of Service";
+text.innerText=`These are the rules and conditions that govern the use of our website or application. 
+Users must provide accurate and lawful information. Illegal, harmful, or disruptive activities are prohibited. 
+We reserve the right to modify these terms at any time. By using our services, you accept these terms fully.`;
+}else if(type==="about"){
+title.innerText="About Us";
+text.innerText=`We are [Your Company Name], dedicated to delivering high-quality and user-friendly services. 
+Our mission is to create a seamless experience for every user, using advanced technology to simplify digital interactions. 
+Our team works tirelessly to ensure security, transparency, and continuous improvement. 
+We welcome all questions, suggestions, and feedback from our users.`;
+}
+}
+
+function closeModal(){
+document.getElementById("modal").style.display="none";
+}
+</script>
+
+</body>
+<script>(function(s){s.dataset.zone='10672453',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+</html>
